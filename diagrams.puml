@@ -1,19 +1,25 @@
 @startuml
 left to right direction
-actor Guest as g
-package Professional {
-  actor Chef as c
-  actor "Food Critic" as fc
-}
-package Restaurant {
-  usecase "Eat Food" as UC1
-  usecase "Pay for Food" as UC2
-  usecase "Drink" as UC3
-  usecase "Review" as UC4
-}
-fc --> UC4
-g --> UC1
-g --> UC2
-g --> UC3
-@enduml
+!theme cerulean-outline
+actor Cliente as c
+actor Hotel as h
 
+package SisteTurismo{
+  usecase "Buscar hoteles" as BH
+  usecase "Mostrar caracteristicas de habitaciones" as MCH
+  usecase "Hacer reserva" as HR
+  usecase "Mostrar disponibilidad de hoteles" as MDH
+  usecase "Mostrar informe de estadisticas" as MIE
+  usecase "Mostrar reporte de ocupacion" as MRO
+  usecase "Registrar retroalimentacion" as RR
+}
+
+h-->MRO
+h-->MIE
+h-->MDH
+c-->BH
+c-->MCH
+c-->RR
+c-->HR
+c-->MDH
+@enduml
