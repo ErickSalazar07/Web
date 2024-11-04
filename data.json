@@ -1,0 +1,10 @@
+{
+  "Persona": {
+    "nombre": "Erick",
+    "apellido": "Salazar",
+    "edad": 15,
+    "telefono": 3145234,
+    "altura": 1.64,
+    "peliculas": ["Pepe","Papa","Pupu"]
+  }
+}
