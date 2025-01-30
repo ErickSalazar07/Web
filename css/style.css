@@ -1,0 +1,11 @@
+nav > a {
+    padding: 10px;
+}
+
+nav {
+    padding: 10px;
+}
+
+#indice a {
+    display: block;
+}
